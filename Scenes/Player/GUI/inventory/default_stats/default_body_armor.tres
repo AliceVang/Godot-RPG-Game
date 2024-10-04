@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://vrlplexabpeq"]
+
+[ext_resource type="Texture2D" uid="uid://ckfasjsi5krbd" path="res://Assets/16x16 RPG Item Pack/Item__00.png" id="1_at1c2"]
+[ext_resource type="Script" path="res://Scripts/player/GUI/inventory/item_data.gd" id="2_ma11a"]
+
+[resource]
+script = ExtResource("2_ma11a")
+type = 0
+item_name = "Default Amor"
+item_damage = 0
+item_health = 0
+item_defense = 0
+stackable = false
+count = 0
+description = "This is aa default armor!"
+item_tecture = ExtResource("1_at1c2")

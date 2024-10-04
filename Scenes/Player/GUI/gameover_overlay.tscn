@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3 uid="uid://rly1sbpg4525"]
+
+[ext_resource type="Script" path="res://Scripts/player/GUI/gameover_overlay.gd" id="1_xm4ry"]
+
+[node name="gamover_overlay" type="CanvasLayer"]
+script = ExtResource("1_xm4ry")
+
+[node name="Panel" type="Panel" parent="."]
+process_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -192.0
+offset_right = 400.0
+offset_bottom = 164.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="restart" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 272.0
+offset_right = 472.0
+offset_bottom = 315.0
+text = "Restart"
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 792.0
+offset_bottom = 200.0
+theme_override_constants/line_spacing = 1
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 50
+text = "Game Over!
+Try Again!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Panel/restart" to="." method="_on_restart_pressed"]

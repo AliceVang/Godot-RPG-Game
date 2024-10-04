@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsd8cmjcj6ty7"]
+
+[ext_resource type="Script" path="res://Scripts/player/GUI/inventory/inventory_main.gd" id="1_6naro"]
+[ext_resource type="Script" path="res://Scripts/player/GUI/inventory/inventory_slot.gd" id="2_youby"]
+
+[node name="inventory" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_6naro")
+
+[node name="grid" type="GridContainer" parent="."]
+layout_mode = 0
+offset_left = 64.0
+offset_top = -120.0
+offset_right = 190.0
+offset_bottom = 12.0
+scale = Vector2(1.5239, 1.45326)
+columns = 4
+
+[node name="InventorySlot" type="PanelContainer" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_youby")
